@@ -1,8 +1,7 @@
-import "./style.css"
-import javascriptLogo from "./javascript.svg"
+import "./style.pcss"
+import javascriptLogo from "/javascript.svg"
 import viteLogo from "/vite.svg"
-import { setupCounter } from "./counter.js"
-import "./src/mocks/browser.js"
+import { setupCounter } from "../../counter.js"
 
 document.querySelector("#app").innerHTML = `
   <div>
@@ -28,7 +27,7 @@ setupCounter(document.querySelector("#counter"))
 const runApp = async () => {
   switch (process.env.NODE_ENV) {
       case "development":
-          await import("./src/mocks/browser.js")
+          await import("../shared/api/browser.js")
               .then(async ({ worker }) => {
                   await worker.start().then(() => {
                       console.debug("App dev run")
