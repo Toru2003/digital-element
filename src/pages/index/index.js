@@ -1,5 +1,6 @@
 import { getPage } from "../../shared/lib/index.js";
-
+// eslint-disable-next-line no-unused-vars
+import { metaTag } from "../../shared/lib/meta.js";
 
 export default () => {
 
@@ -7,6 +8,7 @@ export default () => {
         title: "Главная",
         body: `
             <h1>Главная</h1>
+            
             <nav>
                 <ul>
                     <li>
@@ -17,6 +19,7 @@ export default () => {
                     </li>
                 </ul>
             </nav>
-        `
+        `,
+        meta: metaTag
     })
 }
