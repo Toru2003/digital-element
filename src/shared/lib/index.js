@@ -1,6 +1,7 @@
 import { metaTag } from "./meta.js";
 import { withNaming } from "@bem-react/classname";
 
+
 export const getPage = ({ body = ``, title = ``, meta  = `${metaTag}` }) => {
   return `
     <!DOCTYPE html>
