@@ -35,6 +35,7 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  margin: 0;
 }
 
 #app {
@@ -122,12 +123,26 @@ input {
   align-items: center;
   width: 700px;
   height: 50px;
+  width: 80%;
+  height: 40%;
 
   .logo {
     max-width: 500px;
-    padding: 0;
+    padding: 0 20px;
     height: 50px;
   }
+
+  &__logo {
+    height: 50px;
+  }
+
+      &__nav {
+      display: flex;
+      padding: 0 20px;
+      justify-content: space-between;
+      align-items: center;
+      width: 250px;
+    }
 
 }
 
