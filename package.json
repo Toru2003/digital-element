@@ -1,5 +1,5 @@
 {
-  "name": "vite-project",
+  "name": "d-element-course",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@bem-react/classname": "^1.6.0",
     "@delement/eslint-config-primary": "^1.0.4",
     "@delement/stylelint-config-primary": "^1.0.3",
     "eslint": "^8.50.0",
@@ -43,5 +42,8 @@
   },
   "msw": {
     "workerDirectory": "public"
+  },
+  "dependencies": {
+    "@bem-react/classname": "^1.6.0"
   }
 }

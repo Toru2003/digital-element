@@ -2,11 +2,14 @@ import { getPage } from "../../shared/lib/index.js";
 import { Button } from "../../shared/ui/button/index.js";
 import { Input } from "../../shared/ui/input/index.js";
 import { metaTag } from "../../shared/lib/meta.js";
+import { Header } from "../../widgets/header/index.js";
 
 export default () => {
     return getPage({
         title: "Главная",
         body: `
+        
+            ${Header()}
             <h1>Главная</h1>
             <div class="forma">
                 <h2 class="name">Как вас зовут:</h2>
